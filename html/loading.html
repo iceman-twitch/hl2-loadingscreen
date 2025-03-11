@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-image: url("../data/hl2_loadingscreen/hl2_loadingscreen.png");
+		}
+		.centre {
+			background-color: rgba(27, 27, 27, 0.6);
+			margin: auto;
+			width: 70px;
+			padding: 15px;
+			border-radius: 5px;
+			text-align: center;
+			font-size: 12px;
+			font-weight: 800;
+			font-family: helvetica;
+			color: #ffffff;
+		}
+		</style>
+
+		<script>
+			function setTransitionImage()
+			{
+				var body = document.getElementsByTagName('body')[0];
+				body.style.backgroundImage = 'url(../data/hl2_loadingscreen/hl2_loadingscreen.png)';
+			}
+			 
+			window.setInterval(setTransitionImage, 100); 
+			window.setInterval(setTransitionImage, 500);
+			window.setInterval(setTransitionImage, 1000);
+		</script>
+	</head>
+	<body>
+		<div class="centre">
+			LOADING...
+		</div>
+	</body>
+</html>
